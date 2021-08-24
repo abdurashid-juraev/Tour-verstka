@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Restuarant</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/vendor.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="ico/logo.ico">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <div>
+      <div class="page">
+        <div class="page-head">
+          <div class="page-header">
+            <header>
+              <div class="myContainer">
+                <div class="header-inner">
+                  <div class="top-header">
+                    <div><a class="header-logo" href="#!">LOGO</a>
+                    </div>
+                    <div><a class="header-add-event" href="#!">Добавить обьявление</a>
+                    </div>
+                  </div>
+                  <div class="nav-wrap">
+                    <nav class="burger-menu"><a href="#!" class="burger-menu-btn"><span
+                          class="burger-menu-lines"></span></a>
+                      <ul class="burger-menu-nav menu">
+                        <li><a class="menu-link" href="#!">Города</a>
+                        </li>
+                        <li class="dropDown"><a class="menu-link" href="/tours.html">Туры</a>
+                          <ul class="dropDown-content">
+                            <li><a href="/gids.html">Гид</a>
+                            </li>
+                            <li><a href="#!">Link</a>
+                            </li>
+                            <li><a href="#!">Link</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a class="menu-link" href="/hotels.html">Отели</a>
+                        </li>
+                        <li><a class="menu-link" href="/restuarant.html">Рестораны</a>
+                        </li>
+                        <li><a class="menu-link" href="/transport.html">Транспорт</a>
+                        </li>
+                        <li><a class="menu-link" href="/destinations.html">Места для посешения</a>
+                        </li>
+                        <li><a class="menu-link" href="#!">Новости</a>
+                        </li>
+                      </ul>
+                      <div class="burger-menu-overlay"></div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </header>
+          </div>
+          <section class="banner">
+            <div class="banner-filter"></div>
+            <div class="banner-bg" style="background-image:url(./images/jpg/r1.jfif)"></div>
+            <div class="wrap">
+              <div class="banner-inner">
+                <div class="banner-text">
+                  <h1 class="banner-title m-b-10">Рестораны</h1>
+                  <div class="banner-descr">Проникновенный литературный концерт выдающейся Дины Рубиной — одной из самых
+                    читаемых современных авторов,
+                    <br>лауреата многих престижных международных премий, чьи книги переведены на 38 языков</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="myContainer">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="rest-title">Рестораны Самарканда</div>
+          </div>
+        </div>
+        <section class="restuarant">
+          <div class="sidebar">
+            <div>
+              <div class="type-est-title">Тип заведения</div>
+              <div class="type-est">
+                <label for="restuarant">
+                  <input id="restuarant" type="checkbox" aria-label="Checkbox for following text input">
+                  <span>Рестораны</span>
+                </label>
+                <label for="fast-food">
+                  <input id="fast-food" type="checkbox" aria-label="Checkbox for following text input"> <span>Быстрые
+                    перекусы</span>
+                </label>
+                <label for="candy">
+                  <input id="candy" type="checkbox" aria-label="Checkbox for following text input"> <span>Десерты</span>
+                </label>
+                <label for="kafe">
+                  <input id="kafe" type="checkbox" aria-label="Checkbox for following text input"> <span>Бары и
+                    клубы</span>
+                </label>
+              </div>
+              <hr>
+              <div class="type-est-title">Особенности ресторана</div>
+              <div class="type-est">
+                <label for="delivery">
+                  <input id="delivery" type="checkbox" aria-label="Checkbox for following text input">
+                  <span>Доставка</span>
+                </label>
+                <label for="delivery-food">
+                  <input id="delivery-food" type="checkbox" aria-label="Checkbox for following text input"> <span>Еда на
+                    вынос</span>
+                </label>
+                <label for="client-table">
+                  <input id="client-table" type="checkbox" aria-label="Checkbox for following text input">
+                  <span>Обслуживание</span>
+                </label>
+                <label for="bron">
+                  <input id="bron" type="checkbox" aria-label="Checkbox for following text input">
+                  <span>Бронирование</span>
+                </label>
+                <label for="banket">
+                  <input id="banket" type="checkbox" aria-label="Checkbox for following text input"> <span>Банкет</span>
+                </label>
+                <label for="wifi">
+                  <input id="wifi" type="checkbox" aria-label="Checkbox for following text input"> <span>Бесплатный
+                    wi-fi</span>
+                </label>
+                <label for="muzik">
+                  <input id="muzik" type="checkbox" aria-label="Checkbox for following text input"> <span>Живая
+                    музыка</span>
+                </label>
+                <label for="family">
+                  <input id="family" type="checkbox" aria-label="Checkbox for following text input">
+                  <span>Семейный</span>
+                </label>
+              </div>
+              <hr>
+              <div class="type-est-title">Время приема пищи</div>
+              <div class="type-est">
+                <label for="morning">
+                  <input id="morning" type="checkbox" aria-label="Checkbox for following text input">
+                  <span>Завтрак</span>
+                </label>
+                <label for="branch">
+                  <input id="branch" type="checkbox" aria-label="Checkbox for following text input"> <span>Бранч</span>
+                </label>
+                <label for="lunch">
+                  <input id="lunch" type="checkbox" aria-label="Checkbox for following text input"> <span>Обед</span>
+                </label>
+                <label for="evening">
+                  <input id="evening" type="checkbox" aria-label="Checkbox for following text input"> <span>Ужин</span>
+                </label>
+              </div>
+              <hr>
+              <div class="type-est-title">Цена</div>
+              <div class="type-est">
+                <label for="sale">
+                  <input id="sale" type="checkbox" aria-label="Checkbox for following text input"> <span>Вкусно и
+                    недорого</span>
+                </label>
+                <label for="some-food">
+                  <input id="some-food" type="checkbox" aria-label="Checkbox for following text input"> <span>По
+                    умеренной цене</span>
+                </label>
+                <label for="rest">
+                  <input id="rest" type="checkbox" aria-label="Checkbox for following text input"> <span>Рестораны
+                    высокой кухни</span>
+                </label>
+                <label for="last">
+                  <input id="last" type="checkbox" aria-label="Checkbox for following text input"> <span>Ужин</span>
+                </label>
+              </div>
+              <hr>
+            </div>
+          </div>
+          <div>
+            <div class="rest-content-title">Самарканд: лучшие рестораны</div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="rest-card">
+                  <div class="rest-card-img">
+                    <img src="./images/jpg/r3.jfif" alt="">
+                  </div>
+                  <div class="rest-card-content">
+                    <div class="rest-card-title">Рестораны</div>
+                    <div>
+                      <svg style="display:none">
+                        <symbol id="star" viewBox="0 0 98 92">
+                          <title>star</title>
+                          <path stroke="orange" stroke-width="5"
+                            d="M49 73.5L22.55 87.406l5.05-29.453-21.398-20.86 29.573-4.296L49 6l13.225 26.797 29.573 4.297-21.4 20.86 5.052 29.452z"
+                            fill-rule="evenodd" />
+                        </symbol>
+                      </svg>
+                      <div class="rating">
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="rest-type">Европейская, Восточн ... - $$$</div>
+                    <div class="order-wrap"><a class="order" href="#!">Заказать онлайн</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rest-card">
+                  <div class="rest-card-img">
+                    <img src="./images/jpg/r3.jfif" alt="">
+                  </div>
+                  <div class="rest-card-content">
+                    <div class="rest-card-title">Рестораны</div>
+                    <div>
+                      <svg style="display:none">
+                        <symbol id="star" viewBox="0 0 98 92">
+                          <title>star</title>
+                          <path stroke="orange" stroke-width="5"
+                            d="M49 73.5L22.55 87.406l5.05-29.453-21.398-20.86 29.573-4.296L49 6l13.225 26.797 29.573 4.297-21.4 20.86 5.052 29.452z"
+                            fill-rule="evenodd" />
+                        </symbol>
+                      </svg>
+                      <div class="rating">
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="rest-type">Современная ... - $$$</div>
+                    <div class="order-wrap"><a class="order" href="#!">Заказать онлайн</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rest-card">
+                  <div class="rest-card-img">
+                    <img src="./images/jpg/r3.jfif" alt="">
+                  </div>
+                  <div class="rest-card-content">
+                    <div class="rest-card-title">Рестораны</div>
+                    <div>
+                      <svg style="display:none">
+                        <symbol id="star" viewBox="0 0 98 92">
+                          <title>star</title>
+                          <path stroke="orange" stroke-width="5"
+                            d="M49 73.5L22.55 87.406l5.05-29.453-21.398-20.86 29.573-4.296L49 6l13.225 26.797 29.573 4.297-21.4 20.86 5.052 29.452z"
+                            fill-rule="evenodd" />
+                        </symbol>
+                      </svg>
+                      <div class="rating">
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="rest-type">Узбекская ... - $$$</div>
+                    <div class="order-wrap"><a class="order" href="#!">Заказать онлайн</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rest-card">
+                  <div class="rest-card-img">
+                    <img src="./images/jpg/r3.jfif" alt="">
+                  </div>
+                  <div class="rest-card-content">
+                    <div class="rest-card-title">Рестораны</div>
+                    <div>
+                      <svg style="display:none">
+                        <symbol id="star" viewBox="0 0 98 92">
+                          <title>star</title>
+                          <path stroke="orange" stroke-width="5"
+                            d="M49 73.5L22.55 87.406l5.05-29.453-21.398-20.86 29.573-4.296L49 6l13.225 26.797 29.573 4.297-21.4 20.86 5.052 29.452z"
+                            fill-rule="evenodd" />
+                        </symbol>
+                      </svg>
+                      <div class="rating">
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="rest-type">Азиатская ... - $$$</div>
+                    <div class="order-wrap"><a class="order" href="#!">Заказать онлайн</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rest-card">
+                  <div class="rest-card-img">
+                    <img src="./images/jpg/r3.jfif" alt="">
+                  </div>
+                  <div class="rest-card-content">
+                    <div class="rest-card-title">Рестораны</div>
+                    <div>
+                      <svg style="display:none">
+                        <symbol id="star" viewBox="0 0 98 92">
+                          <title>star</title>
+                          <path stroke="orange" stroke-width="5"
+                            d="M49 73.5L22.55 87.406l5.05-29.453-21.398-20.86 29.573-4.296L49 6l13.225 26.797 29.573 4.297-21.4 20.86 5.052 29.452z"
+                            fill-rule="evenodd" />
+                        </symbol>
+                      </svg>
+                      <div class="rating">
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="rest-type">Узбекская ... - $$$</div>
+                    <div class="order-wrap"><a class="order" href="#!">Заказать онлайн</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rest-card">
+                  <div class="rest-card-img">
+                    <img src="./images/jpg/r3.jfif" alt="">
+                  </div>
+                  <div class="rest-card-content">
+                    <div class="rest-card-title">Рестораны</div>
+                    <div>
+                      <svg style="display:none">
+                        <symbol id="star" viewBox="0 0 98 92">
+                          <title>star</title>
+                          <path stroke="orange" stroke-width="5"
+                            d="M49 73.5L22.55 87.406l5.05-29.453-21.398-20.86 29.573-4.296L49 6l13.225 26.797 29.573 4.297-21.4 20.86 5.052 29.452z"
+                            fill-rule="evenodd" />
+                        </symbol>
+                      </svg>
+                      <div class="rating">
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                        <a href="javascript:;" class="rating__button" href="#">
+                          <svg class="rating__star">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="rest-type">Современная ... - $$$</div>
+                    <div class="order-wrap"><a class="order" href="#!">Заказать онлайн</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="m-t-40">
+      <div class="myContainer">
+        <div class="row">
+          <div class="col-md-3">
+            <div>
+              <p class="footer-social-title"><a href="#!">LOGO</a>
+              </p>
+              <p><a href="#!">О проекте</a>
+              </p>
+              <p><a href="#!">Контакты</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <p class="footer-social-title">Партнерам и организаторам</p>
+              <p></p>
+              <p><a href="#!">Размещение событий</a>
+              </p>
+              <p><a href="#!">Требования к фотографиям</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="footer-social-title">Следите за нами в социальных сетях</p>
+            <div class="footer-social-wrap">
+              <a class="footer-social-link" href="#!">
+                <img src="./../images/png/facebook.png" alt="">
+              </a>
+              <a class="footer-social-link" href="#!">
+                <img src="./../images/png/instagram.png" alt="">
+              </a>
+              <a class="footer-social-link" href="#!">
+                <img src="./../images/png/telegram.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-info">
+              <p>Политика конфиденциальности</p>
+              <p>Редакционная политика</p>
+            </div>
+            <div>
+              <p>© 2018–2020 ООО «LOGO». Свидетельство регистрации электронного СМИ №1245</p>
+              <p>Права на текстовые и другие материалы, размещенные на сайте, охраняются законом. При цитировании
+                обязательна прямая ссылка на LOGO.uz</p>
+              <p>Сайт работает в тестовом режиме.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/vendor.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
